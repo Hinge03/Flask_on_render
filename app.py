@@ -8,7 +8,8 @@ from flask_cors import CORS
 import io
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://6808eb9e10be5e70a5f7e12d--sensational-capybara-ed3a41.netlify.app/"])
+
 
 # Load your trained CNN model
 MODEL_PATH = 'medicinal_plant_classifier_model.h5'  # Replace with your actual model path
